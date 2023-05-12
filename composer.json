@@ -1,0 +1,30 @@
+{
+    "name": "ferdyrurka/single-tenant-vendor-bridge",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ferdyrurka\\SingleTenantVendorBridge\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Łukasz Staniszewski",
+            "email": "kontakt@lukaszstaniszewski.pl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.2",
+        "symfony/http-kernel": "^6.2",
+        "symfony/framework-bundle": "^6.2",
+        "symfony/config": "^6.2",
+        "ferdyrurka/single-tenant-vendor": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/lukaszstaniszewskidotpl/single-tenant-vendor"
+        }
+    ]
+}

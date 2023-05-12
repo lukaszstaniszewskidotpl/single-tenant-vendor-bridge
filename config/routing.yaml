@@ -1,0 +1,3 @@
+single_tenant_vendor_bridge:
+  resource: '../src/Controller'
+  type: annotation

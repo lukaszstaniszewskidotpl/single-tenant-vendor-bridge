@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Ferdyrurka\SingleTenantVendorBridge\:
+    resource: '../src/*'
+    exclude: '../src/{DependencyInjection,Entity,Migrations,Tests}'
+
+  Ferdyrurka\SingleTenantVendorBridge\Controller\:
+    resource: '../src/Controller/'
+    tags: ['controller.service_arguments']
+
+  Ferdyrurka\SingleTenantVendor\Repository\OrderRepositoryInterface: '@Ferdyrurka\SingleTenantVendorBridge\Repository\OrderRepository'
