@@ -12,3 +12,5 @@ services:
     tags: ['controller.service_arguments']
 
   Ferdyrurka\SingleTenantVendor\Repository\OrderRepositoryInterface: '@Ferdyrurka\SingleTenantVendorBridge\Repository\OrderRepository'
+
+  Ferdyrurka\SingleTenantVendor\Controller\TransportController: '@Ferdyrurka\SingleTenantVendorBridge\Controller\TransportController'
