@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Ferdyrurka\SingleTenantVendorBridge\DependencyInjection;
+namespace Ferdyrurka\SingleTenantVendorClient\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class SingleTenantVendorBridgeExtension extends Extension
+class SingleTenantVendorClientExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container): void
     {

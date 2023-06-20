@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Ferdyrurka\SingleTenantVendorBridge;
+namespace Ferdyrurka\SingleTenantVendorClient;
 
-use Ferdyrurka\SingleTenantVendorBridge\CompilerPass\OverrideControllerCompilerPass;
-use Ferdyrurka\SingleTenantVendorBridge\DependencyInjection\SingleTenantVendorBridgeExtension;
+use Ferdyrurka\SingleTenantVendorClient\CompilerPass\OverrideControllerCompilerPass;
+use Ferdyrurka\SingleTenantVendorClient\DependencyInjection\SingleTenantVendorClientExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-class SingleTenantVendorBridgeBundle extends AbstractBundle
+class SingleTenantVendorClientBundle extends AbstractBundle
 {
     public function build(ContainerBuilder $container): void
     {
@@ -21,6 +21,6 @@ class SingleTenantVendorBridgeBundle extends AbstractBundle
 
     public function getContainerExtension(): ExtensionInterface
     {
-        return new SingleTenantVendorBridgeExtension();
+        return new SingleTenantVendorClientExtension();
     }
 }

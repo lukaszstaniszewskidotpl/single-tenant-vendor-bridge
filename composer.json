@@ -1,10 +1,10 @@
 {
-    "name": "ferdyrurka/single-tenant-vendor-bridge",
+    "name": "ferdyrurka/single-tenant-vendor-client",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ferdyrurka\\SingleTenantVendorBridge\\": "src/"
+            "Ferdyrurka\\SingleTenantVendorClient\\": "src/"
         }
     },
     "authors": [

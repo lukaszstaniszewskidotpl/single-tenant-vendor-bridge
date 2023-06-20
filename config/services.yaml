@@ -3,12 +3,12 @@ services:
     autowire: true
     autoconfigure: true
 
-  Ferdyrurka\SingleTenantVendorBridge\:
+  Ferdyrurka\SingleTenantVendorClient\:
     resource: '../src/*'
     exclude: '../src/{DependencyInjection,Entity,Migrations,Tests}'
 
-  Ferdyrurka\SingleTenantVendorBridge\Controller\:
+  Ferdyrurka\SingleTenantVendorClient\Controller\:
     resource: '../src/Controller/'
     tags: ['controller.service_arguments']
 
-  Ferdyrurka\SingleTenantVendor\Repository\OrderRepositoryInterface: '@Ferdyrurka\SingleTenantVendorBridge\Repository\OrderRepository'
+  Ferdyrurka\SingleTenantVendor\Repository\OrderRepositoryInterface: '@Ferdyrurka\SingleTenantVendorClient\Repository\OrderRepository'

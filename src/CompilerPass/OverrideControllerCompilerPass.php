@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ferdyrurka\SingleTenantVendorBridge\CompilerPass;
+namespace Ferdyrurka\SingleTenantVendorClient\CompilerPass;
 
-use Ferdyrurka\SingleTenantVendorBridge\Controller\TransportController;
+use Ferdyrurka\SingleTenantVendorClient\Controller\TransportController;
 use Ferdyrurka\SingleTenantVendor\Controller\TransportController as BaseTransportController;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
